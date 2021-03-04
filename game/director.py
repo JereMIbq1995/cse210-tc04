@@ -2,7 +2,7 @@ from dealer import Dealer
 
 class Director:
     def __init__(self):
-        self.playerScore = 400
+        self.playerScore = 300
         self.current_card = 0
         self.next_card = 0
         self.dealer = Dealer()
