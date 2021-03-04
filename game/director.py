@@ -12,7 +12,7 @@ class Director:
         
         while (self.keepPlaying):
             self.current_card = self.dealer.drawCard()
-            print("The card is: " + self.currentCard)
+            print("The card is: " + self.current_card)
             guess = self.getInput()
             self.next_card = self.dealer.drawCard()
             self.doUpdates(guess)
