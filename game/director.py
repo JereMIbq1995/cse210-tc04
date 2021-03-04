@@ -22,5 +22,12 @@ class Director:
     def getInput(self):
         pass
 
-    def doUpdates(self):
-        pass
+    def doUpdates(self, guess):
+        if self.current_card < self.next_card and guess == "h":
+            self.playerScore += 100
+        elif self.current_card < self.next_card and guess == "l":
+            self.playerScore -= 75
+        elif self.current_card > self.next_card and guess == "l":
+            self.playerScore += 100
+        elif self.current_card > self.next_card and guess == "h":
+            self.playerScore -= 75
