@@ -13,10 +13,10 @@ class Director:
 
     def doUpdates(self, guess):
         if self.current_card < self.next_card and guess == "h":
-            self.points += 100
+            self.playerScore += 100
         elif self.current_card < self.next_card and guess == "l":
-            self.points -= 75
+            self.playerScore -= 75
         elif self.current_card > self.next_card and guess == "l":
-            self.points += 100
+            self.playerScore += 100
         elif self.current_card > self.next_card and guess == "h":
-            self.points -= 75
+            self.playerScore -= 75
