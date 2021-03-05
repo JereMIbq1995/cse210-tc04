@@ -12,11 +12,11 @@ class Director:
         # Jeremy does this one       
         while (self.keepPlaying):
             self.current_card = self.dealer.drawCard()
-            print("The card is: " + self.current_card)
+            print("The card is: " + str(self.current_card))
             guess = self.getInput()
             self.next_card = self.dealer.drawCard()
             self.doUpdates(guess)
-            print("Your score is: " + self.playerScore)
+            print("Your score is: " + str(self.playerScore))
             self.keepPlaying = self.getKeepPlaying()
 
     def getInput(self):
