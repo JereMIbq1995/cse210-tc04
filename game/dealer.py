@@ -5,4 +5,4 @@ class Dealer:
         self.card = []
 
     def drawCard(self):
-        return random.randrange(range(1,14))
+        return random.randrange(1,14)
