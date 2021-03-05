@@ -1,5 +1,5 @@
 import random
-
+#Samson do this one
 class Dealer:
     def __init__(self):
         self.card = []
