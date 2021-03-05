@@ -2,7 +2,7 @@ from dealer import Dealer
 
 class Director:
     def __init__(self):
-        self.playerScore = 300
+        self.playerScore = 400
         self.current_card = 0
         self.next_card = 0
         self.dealer = Dealer()
@@ -16,7 +16,8 @@ class Director:
             guess = self.getInput()
             self.next_card = self.dealer.drawCard()
             self.doUpdates(guess)
-            self.keepPlaying = getKeepPlaying()
+            print("Your score is: " + self.playerScore)
+            self.keepPlaying = self.getKeepPlaying()
 
     def getInput(self):
         #mikaela does this
