@@ -35,7 +35,7 @@ class Director:
         elif self.current_card > self.next_card and guess == "h":
             self.playerScore -= 75
 
-    def getKeePlaying(self):
+    def getKeepPlaying(self):
       #Samson
         valid = False
         while not valid:
@@ -51,4 +51,4 @@ class Director:
                     return True
                 else:
                     valid = False
-                    print("Error: Please enter y/n to keep playing or stop playing")
+                    print("Error: Please enter y/n to keep playing or stop playing.")
