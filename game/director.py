@@ -11,7 +11,8 @@ class Director:
 
     def getInput(self):
         #mikaela does this
-        pass
+        guess_1 = input("Higher or Lower? [h/l]: ")
+        return guess_1
 
     def doUpdates(self):
         #Abram
