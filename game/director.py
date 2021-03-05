@@ -15,9 +15,11 @@ class Director:
             print("The card is: " + str(self.current_card))
             guess = self.getInput()
             self.next_card = self.dealer.drawCard()
+            print("Next card was: " + str(self.next_card))
             self.doUpdates(guess)
             print("Your score is: " + str(self.playerScore))
             self.keepPlaying = self.getKeepPlaying()
+            print("")
 
     def getInput(self):
         #mikaela does this
