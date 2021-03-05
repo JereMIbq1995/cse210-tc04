@@ -31,3 +31,20 @@ class Director:
             self.playerScore += 100
         elif self.current_card > self.next_card and guess == "h":
             self.playerScore -= 75
+            
+    def getKeePlaying(self):
+        valid = False
+        while not valid:
+            text = input("Keep playing? [y/n]: ")
+            if isinstance(text, str):
+                prompt = text.lower()
+                if prompt == "n":
+                    valid = True
+                    return False
+                
+                elif prompt == "y":
+                    valid = True
+                    return True
+                else:
+                    valid = False
+                    print("Error: Please enter y/n to keep playing or stop playing")
